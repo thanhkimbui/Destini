@@ -13,6 +13,8 @@
 		D0A083762B919FD300DDD59C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0A083742B919FD300DDD59C /* Main.storyboard */; };
 		D0A083782B919FD400DDD59C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0A083772B919FD400DDD59C /* Assets.xcassets */; };
 		D0A0837B2B919FD400DDD59C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0A083792B919FD400DDD59C /* LaunchScreen.storyboard */; };
+		D0A083862B925B7000DDD59C /* Story.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A083852B925B7000DDD59C /* Story.swift */; };
+		D0A083882B925B8000DDD59C /* StoryBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0A083872B925B8000DDD59C /* StoryBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		D0A083772B919FD400DDD59C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0A0837A2B919FD400DDD59C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0A0837C2B919FD400DDD59C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0A083852B925B7000DDD59C /* Story.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Story.swift; sourceTree = "<group>"; };
+		D0A083872B925B8000DDD59C /* StoryBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +62,39 @@
 			children = (
 				D0A0836E2B919FD300DDD59C /* AppDelegate.swift */,
 				D0A083702B919FD300DDD59C /* SceneDelegate.swift */,
-				D0A083722B919FD300DDD59C /* ViewController.swift */,
-				D0A083742B919FD300DDD59C /* Main.storyboard */,
+				D0A083842B925B5C00DDD59C /* Model */,
+				D0A083832B925B4800DDD59C /* Controller */,
+				D0A083822B925B3E00DDD59C /* View */,
 				D0A083772B919FD400DDD59C /* Assets.xcassets */,
 				D0A083792B919FD400DDD59C /* LaunchScreen.storyboard */,
 				D0A0837C2B919FD400DDD59C /* Info.plist */,
 			);
 			path = Destini;
+			sourceTree = "<group>";
+		};
+		D0A083822B925B3E00DDD59C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D0A083742B919FD300DDD59C /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D0A083832B925B4800DDD59C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D0A083722B919FD300DDD59C /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D0A083842B925B5C00DDD59C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D0A083852B925B7000DDD59C /* Story.swift */,
+				D0A083872B925B8000DDD59C /* StoryBrain.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0A083882B925B8000DDD59C /* StoryBrain.swift in Sources */,
 				D0A083732B919FD300DDD59C /* ViewController.swift in Sources */,
 				D0A0836F2B919FD300DDD59C /* AppDelegate.swift in Sources */,
 				D0A083712B919FD300DDD59C /* SceneDelegate.swift in Sources */,
+				D0A083862B925B7000DDD59C /* Story.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -295,6 +327,8 @@
 				DEVELOPMENT_TEAM = 377V6WHK4G;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Destini/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Destini;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -323,6 +357,8 @@
 				DEVELOPMENT_TEAM = 377V6WHK4G;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Destini/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Destini;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.games";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
